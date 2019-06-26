@@ -1,0 +1,7 @@
+<form method="post" action="/articles/<%=params[:id]%>">
+  <p>Title: <input type="text" id="title" name="title" value="<%=Article.find(params[:id]).title%>"></p>
+  <br>
+  <p>Content: <textarea type="text" id="content" name="content" value="<%=Article.find(params[:id]).content%>"></textarea></p>
+  <input id="hidden" type="hidden" name="_method" value="PATCH">
+  <input type="submit" value="submit">
+</form>
