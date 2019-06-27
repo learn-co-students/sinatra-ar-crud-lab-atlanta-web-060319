@@ -1,0 +1,12 @@
+<h1>Article Library</h1>
+
+<ul>
+    
+    <%@articles.each do |article|%> 
+    <li>
+    <a href="/articles/<%article.id%>"><%=article.title%>-<%=article.content%>
+    <li>
+    <%end%>
+</ul>
+
+    
